@@ -101,4 +101,5 @@ watch('src/resources/**', resources)
 exports.styles = styles // экспортируем таск styles в котором будет вызываться функция styles
 exports.scripts = scripts
 exports.htmlMinify = htmlMinify
+exports.clean = clean
 exports.default = series(clean, resources, htmlMinify, scripts, styles, images, svgSprites, watchFiles)
